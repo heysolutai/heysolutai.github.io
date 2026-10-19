@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Virttus · Yago Candido Machado</title>
+  <meta name="description" content="Estudo de caso: plataforma de garantia locatícia com sinistros, boletos no Santander via mTLS e assinatura de certificado na Clicksign.">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script>try { var t = localStorage.getItem("tema"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {}</script>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+  <header class="nav">
+    <div class="wrap">
+      <a class="brand" href="../">Yago Machado<span>.</span></a>
+      <nav aria-label="Principal">
+        <ul>
+          <li><a href="../#projetos">Projetos</a></li>
+          <li><a href="../#contato">Contato</a></li>
+          <li>
+            <button class="theme-toggle" type="button" aria-label="Alternar tema claro ou escuro">
+              <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+              <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="case-hero">
+      <div class="wrap">
+        <a class="back" href="../#outros">← Outros projetos</a>
+        <p class="eyebrow">Estudo de caso · Garantia locatícia</p>
+        <h1>Virttus</h1>
+        <p class="lead">Plataforma em que imobiliárias contratam garantia locatícia, a alternativa ao fiador: o inquilino passa por análise de crédito, o certificado sai assinado na Clicksign e cobrado por boleto, e o sinistro tem um fluxo próprio.</p>
+        <ul class="tags"><li class="hot">Cliente Virttus</li><li>Feito em dupla</li><li>Código aberto</li></ul>
+        <p><a class="link-arrow" href="https://github.com/heysolutai/virttus">Ver o código no GitHub</a></p>
+        <dl class="case-meta">
+          <div><dt>Papel</dt><dd>Um dos dois devs, com cerca de 51% dos commits</dd></div>
+          <div><dt>Período</dt><dd>Fev a set de 2026</dd></div>
+          <div><dt>Stack</dt><dd>Laravel 12, Vue 3, Inertia, PostgreSQL</dd></div>
+          <div><dt>Escala</dt><dd>433 commits, 81 migrations</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="wrap">
+        <div class="gallery">
+          <figure class="shot with-caption wide">
+            <img src="../assets/prints/virttus/01-ocorrencia.webp" width="2880" height="1800" alt="Ocorrência com documentos aprovados e rejeitados e o chat entre a imobiliária e a Virttus" loading="lazy" decoding="async">
+            <figcaption>Sinistro em análise: cada documento é aprovado ou rejeitado com motivo, e a conversa com a imobiliária fica registrada ao lado.</figcaption>
+          </figure>
+          <figure class="shot with-caption">
+            <img src="../assets/prints/virttus/02-ocorrencia-dossie.webp" width="2880" height="1800" alt="Checklist de provas da ocorrência e geração do dossiê em PDF" loading="lazy" decoding="async">
+            <figcaption>As provas aprovadas entram no dossiê em PDF antes do pagamento.</figcaption>
+          </figure>
+          <figure class="shot with-caption">
+            <img src="../assets/prints/virttus/04-boletos.webp" width="2880" height="1800" alt="Boletos consolidados por imobiliária com status" loading="lazy" decoding="async">
+            <figcaption>Boleto mensal consolidado de cada imobiliária, emitido no Santander.</figcaption>
+          </figure>
+          <figure class="shot with-caption">
+            <img src="../assets/prints/virttus/06-certificado.webp" width="2880" height="1800" alt="Etapa de emissão do certificado com o status de cada signatário na Clicksign" loading="lazy" decoding="async">
+            <figcaption>Emissão do certificado: o status de cada signatário vem da Clicksign.</figcaption>
+          </figure>
+          <figure class="shot with-caption">
+            <img src="../assets/prints/virttus/03-cotacao-etapas.webp" width="2880" height="1800" alt="Análise do proponente com score e parecer" loading="lazy" decoding="async">
+            <figcaption>Análise do proponente com score e parecer, antes da decisão do analista.</figcaption>
+          </figure>
+          <figure class="shot with-caption">
+            <img src="../assets/prints/virttus/05-dashboard.webp" width="2880" height="1800" alt="Visão global com cotações por etapa e ocorrências por status" loading="lazy" decoding="async">
+            <figcaption>Visão global da rede de imobiliárias.</figcaption>
+          </figure>
+          <figure class="shot phone with-caption">
+            <img src="../assets/prints/virttus/08-mobile.webp" width="780" height="1688" alt="Chat da ocorrência no celular" loading="lazy" decoding="async">
+            <figcaption>O chat do sinistro no celular.</figcaption>
+          </figure>
+          <figure class="shot with-caption wide">
+            <img src="../assets/prints/virttus/07-landing.webp" width="2880" height="1800" alt="Landing page da Virttus" loading="lazy" decoding="async">
+            <figcaption>Landing page com captação de imobiliárias.</figcaption>
+          </figure>
+        </div>
+        <p style="color: var(--muted); font-size: 0.9rem; margin-top: 16px">Telas de um ambiente de demonstração com dados fictícios.</p>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="wrap case-grid">
+        <h2>O problema</h2>
+        <div class="prose">
+          <p>A garantia locatícia depende de análise de crédito, de conferência de documentos de vários participantes, de assinatura do certificado e de cobrança mensal, e cada uma dessas etapas costumava ser feita à mão.</p>
+          <p>Quando o inquilino deixa de pagar, a imobiliária abre um sinistro, que precisa de prazos, provas e um dossiê. A plataforma junta cotação, análise, emissão, cobrança e sinistro num único fluxo, com papéis separados para imobiliária, analista e administração.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="wrap case-grid">
+        <h2>O que o sistema faz</h2>
+        <div class="prose">
+          <ul class="checklist">
+            <li>Cotação em etapas: proponente, corresponsáveis, análise, plano, imóvel e locador, com cada documento aprovado ou recusado individualmente.</li>
+            <li>Análise de crédito com consulta a bureau e parecer.</li>
+            <li>Certificado em PDF enviado para assinatura eletrônica na Clicksign.</li>
+            <li>Cobrança por boletos do Santander, com faturamento mensal, segunda via e carteira.</li>
+            <li>Ocorrências (sinistros) com chat, anexos, prazos, obrigações por competência e dossiê em PDF.</li>
+            <li>Notificações em tempo real e gestão de imobiliárias, usuários e permissões.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="wrap case-grid">
+        <h2>Minha parte</h2>
+        <div class="prose">
+          <p>O sistema foi feito por dois desenvolvedores. Fiquei com o sinistro e com as integrações que movimentam dinheiro e documentos:</p>
+          <ul class="checklist">
+            <li>O módulo de ocorrências inteiro: chat, decisão por arquivo, cálculo de prazo, obrigações por competência, registro de pagamento e dossiê.</li>
+            <li>A emissão e a liquidação de boletos no Santander, com mTLS.</li>
+            <li>A maior parte da integração com a Clicksign: envio, reenvio, sincronização e webhook.</li>
+            <li>O suporte a locador pessoa física, além da imobiliária pessoa jurídica.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="wrap case-grid">
+        <h2>Decisões técnicas</h2>
+        <div class="decisions">
+          <div class="decision">
+            <h3>mTLS com o banco em cURL direto</h3>
+            <p>O Santander exige certificado A1 e mTLS. O cliente HTTP usa cURL direto, porque o banco tratava a requisição montada pelo Guzzle de forma diferente. O payload do boleto e o webhook de liquidação têm testes.</p>
+          </div>
+          <div class="decision">
+            <h3>Sinistro com prazos e prova</h3>
+            <p>Cada ocorrência tem obrigações por competência e prazo calculado, e cada arquivo enviado recebe uma decisão própria. No fim, o sistema monta o dossiê da ocorrência em PDF.</p>
+          </div>
+          <div class="decision">
+            <h3>Assinatura que não se perde</h3>
+            <p>O status do certificado chega da Clicksign por webhook, e uma rotina de sincronização confere o status direto na Clicksign. O analista também pode reenviar o pedido de assinatura.</p>
+          </div>
+          <div class="decision">
+            <h3>Deploy contínuo</h3>
+            <p>Docker com app, worker, scheduler e servidor de websockets. O GitLab CI faz build, migrations e reinício das filas num runner próprio, e um compose com ngrok permite testar o webhook do banco em homologação.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="wrap case-grid">
+        <h2>Em números</h2>
+        <div class="stats">
+          <div class="stat"><b>39 de 40</b><span>commits do módulo de sinistros são meus</span></div>
+          <div class="stat"><b>3</b><span>integrações: Santander, Clicksign e bureau de crédito</span></div>
+          <div class="stat"><b>81</b><span>migrations</span></div>
+          <div class="stat"><b>433</b><span>commits na branch principal</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="wrap case-grid">
+        <h2>Stack</h2>
+        <div>
+          <ul class="chips"><li>Laravel 12</li><li>PHP 8.3</li><li>Vue 3</li><li>TypeScript</li><li>Inertia 2</li><li>Tailwind 4</li><li>PostgreSQL</li><li>Redis</li><li>Laravel Reverb</li><li>Fortify</li><li>DomPDF</li><li>Pest</li><li>Docker</li><li>GitLab CI</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="wrap next-project">
+        <a href="../#outros"><small>Voltar</small><b>Outros projetos</b></a>
+        <a class="right" href="../#projetos"><small>Ver também</small><b>Projetos em destaque →</b></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <span>© <span data-ano>2026</span> Yago Candido Machado</span>
+      <span>Código aberto no GitHub.</span>
+    </div>
+  </footer>
+  <script src="../assets/site.js"></script>
+</body>
+</html>
