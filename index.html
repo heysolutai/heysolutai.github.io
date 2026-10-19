@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yago Candido Machado · Desenvolvedor Fullstack</title>
+  <meta name="description" content="Desenvolvedor fullstack: SaaS multi-empresa, integrações com bancos e ERPs e atendimento no WhatsApp com agentes de IA, do modelo de dados ao deploy.">
+  <meta property="og:title" content="Yago Candido Machado · Desenvolvedor Fullstack">
+  <meta property="og:description" content="SaaS multi-empresa, integrações bancárias e WhatsApp com IA, do modelo de dados ao deploy.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>try { var t = localStorage.getItem("tema"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {}</script>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="nav">
+    <div class="wrap">
+      <a class="brand" href="./">Yago Machado<span>.</span></a>
+      <nav aria-label="Principal">
+        <ul>
+          <li><a href="#projetos">Projetos</a></li>
+          <li class="hide-sm"><a href="#competencias">Competências</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li>
+            <button class="theme-toggle" type="button" aria-label="Alternar tema claro ou escuro">
+              <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+              <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero">
+      <div class="wrap">
+        <p class="eyebrow">Desenvolvedor Fullstack · Laravel, Next.js e Node</p>
+        <h1>Sistemas que fazem a operação <em>andar sozinha</em>.</h1>
+        <p class="lead">Sou o <strong>Yago Candido Machado</strong>. Construo SaaS multi-empresa, integrações com bancos e ERPs e atendimento no WhatsApp com agentes de IA, do modelo de dados ao deploy em produção.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projetos">Ver projetos</a>
+          <a class="btn ghost" href="#contato">Falar comigo</a>
+        </div>
+
+        <div class="areas">
+          <div><b>SaaS multi-empresa</b><span>Isolamento por tenant, planos, cobrança recorrente e painel de plataforma.</span></div>
+          <div><b>Bancos e pagamentos</b><span>Boletos com mTLS no Bradesco e no Santander, Pix pelo Asaas e baixa automática.</span></div>
+          <div><b>WhatsApp com IA</b><span>Agentes com ferramentas, filas e vários provedores de WhatsApp.</span></div>
+          <div><b>Até a produção</b><span>Docker Swarm, Traefik, CI/CD, Sentry e backup.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projetos">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Projetos em destaque</h2>
+          <p>Cinco sistemas que construí ou liderei, com o problema, as decisões técnicas e os números de cada um.</p>
+        </div>
+
+        <div class="features">
+          <article class="feature">
+            <div class="feature-shot">
+              <figure class="shot"><img src="assets/prints/maya-crm/01-conversas.webp" width="2880" height="1800" alt="Caixa de entrada do Maya CRM" loading="lazy" decoding="async"></figure>
+            </div>
+            <div class="feature-main">
+              <div class="feature-num">01 · SaaS próprio</div>
+              <h3><a href="projetos/maya-crm.html">Maya CRM</a></h3>
+              <ul class="tags"><li class="hot">Em produção na Wyarp</li><li>Atendimento</li><li>Agentes de IA</li></ul>
+              <p>Plataforma multi-empresa que centraliza o atendimento por WhatsApp, com caixa de entrada da equipe, funil de vendas e agentes de IA que respondem, agendam e consultam o CRM sozinhos.</p>
+              <ul class="points">
+                <li>4 provedores de WhatsApp atrás de uma mesma camada de adaptadores</li>
+                <li>12 workers em fila com lock distribuído no Redis</li>
+                <li>Servidor MCP com OAuth 2.1 para consultar o CRM pelo Claude</li>
+              </ul>
+              <a class="link-arrow" href="projetos/maya-crm.html">Ler o estudo de caso</a>
+            </div>
+            <div class="ficha">
+              <dl>
+                <div><dt>Papel</dt><dd>Autor principal, com cerca de 98% dos commits</dd></div>
+                <div><dt>Período</dt><dd>Mar a out de 2026</dd></div>
+                <div><dt>Escala</dt><dd>175 rotas de API, 55 modelos, 53 arquivos de teste</dd></div>
+              </dl>
+              <ul class="chips"><li>Next.js 15</li><li>Prisma</li><li>PostgreSQL</li><li>BullMQ</li><li>Redis</li></ul>
+            </div>
+          </article>
+
+          <article class="feature">
+            <div class="feature-shot">
+              <figure class="shot"><img src="assets/prints/wyarp-motosys/01-dashboard.webp" width="2880" height="1800" alt="Dashboard do Wyarp MotoSYS" loading="lazy" decoding="async"></figure>
+            </div>
+            <div class="feature-main">
+              <div class="feature-num">02 · ERP e SaaS</div>
+              <h3><a href="projetos/wyarp-motosys.html">Wyarp MotoSYS</a></h3>
+              <ul class="tags"><li class="hot">Em produção em 3 lojas</li><li>Crediário</li><li>Boletos</li></ul>
+              <p>ERP para lojas de motos que cobre o ciclo inteiro, da entrada da moto no estoque à baixa automática do boleto. Começou numa loja piloto e virou um SaaS multi-empresa.</p>
+              <ul class="points">
+                <li>Boletos no Bradesco (mTLS e OAuth2), Banco do Brasil e Caixa, com baixa por webhook</li>
+                <li>Migração das lojas de MySQL para um PostgreSQL multi-empresa</li>
+                <li>Servidor MCP com cerca de 20 ferramentas para auditar a loja com IA</li>
+              </ul>
+              <a class="link-arrow" href="projetos/wyarp-motosys.html">Ler o estudo de caso</a>
+            </div>
+            <div class="ficha">
+              <dl>
+                <div><dt>Papel</dt><dd>Dev principal em equipe de dois; fiz as integrações bancárias, a camada multi-empresa e o MCP</dd></div>
+                <div><dt>Período</dt><dd>Jan a out de 2026</dd></div>
+                <div><dt>Escala</dt><dd>Mais de 1.500 commits, 3 bancos, cerca de 15 rotinas agendadas</dd></div>
+              </dl>
+              <ul class="chips"><li>Laravel 12</li><li>PHP 8.4</li><li>PostgreSQL</li><li>Alpine.js</li></ul>
+            </div>
+          </article>
+
+          <article class="feature">
+            <div class="feature-shot">
+              <figure class="shot"><img src="assets/prints/welog/03-dashboard.webp" width="2880" height="1800" alt="Dashboard da operação do WeLog" loading="lazy" decoding="async"></figure>
+            </div>
+            <div class="feature-main">
+              <div class="feature-num">03 · Logística</div>
+              <h3><a href="projetos/welog.html">WeLog</a></h3>
+              <ul class="tags"><li class="hot">Cliente WeGift</li><li>Cerca de 1.000 testes</li><li>Código aberto</li></ul>
+              <p>Plataforma da WeGift que leva kits de brindes corporativos do pedido no ERP até a casa de cada colaborador, com portal de resgate, importação em massa e rastreio automático.</p>
+              <ul class="points">
+                <li>6 integrações (Omie, Trello, Flash, Correios e outras), cada uma com versão falsa para rodar sem credenciais</li>
+                <li>Retry, circuit breaker e webhooks idempotentes</li>
+                <li>CI com testes, build e auditoria de dependências antes do deploy</li>
+              </ul>
+              <a class="link-arrow" href="projetos/welog.html">Ler o estudo de caso</a>
+            </div>
+            <div class="ficha">
+              <dl>
+                <div><dt>Papel</dt><dd>Dev principal, com cerca de 89% dos commits</dd></div>
+                <div><dt>Período</dt><dd>Jul a out de 2026</dd></div>
+                <div><dt>Escala</dt><dd>144 arquivos de teste, 4 filas dedicadas, 31 comandos de diagnóstico</dd></div>
+              </dl>
+              <ul class="chips"><li>Laravel 13</li><li>Vue 3</li><li>Inertia</li><li>PostgreSQL</li><li>GitLab CI</li></ul>
+            </div>
+          </article>
+
+          <article class="feature">
+            <div class="feature-shot">
+              <figure class="shot"><img src="assets/prints/nacera/03-dashboard.webp" width="2880" height="1800" alt="Dashboard do NaCera" loading="lazy" decoding="async"></figure>
+            </div>
+            <div class="feature-main">
+              <div class="feature-num">04 · SaaS próprio</div>
+              <h3><a href="projetos/nacera.html">NaCera</a></h3>
+              <ul class="tags"><li class="hot">Produto próprio</li><li>Lava-jatos</li><li>Bot de WhatsApp</li></ul>
+              <p>SaaS para lava-jatos com agenda pública, ordens de serviço, checklist com fotos, financeiro, assinatura recorrente e um bot de WhatsApp que marca horário sozinho.</p>
+              <ul class="points">
+                <li>Isolamento entre empresas por Row-Level Security no PostgreSQL, com testes</li>
+                <li>Desenvolvimento guiado por spec, com princípios de LGPD e segurança</li>
+                <li>Segunda vertical, para salões e barbearias, em 5 dias</li>
+              </ul>
+              <a class="link-arrow" href="projetos/nacera.html">Ler o estudo de caso</a>
+            </div>
+            <div class="ficha">
+              <dl>
+                <div><dt>Papel</dt><dd>Autor de todo o código</dd></div>
+                <div><dt>Período</dt><dd>Mai a set de 2026</dd></div>
+                <div><dt>Escala</dt><dd>36 modelos, 31 arquivos de teste, 2 verticais</dd></div>
+              </dl>
+              <ul class="chips"><li>Next.js 15</li><li>React 19</li><li>Prisma</li><li>PostgreSQL 17</li><li>Asaas</li></ul>
+            </div>
+          </article>
+
+          <article class="feature">
+            <div class="feature-shot">
+              <figure class="shot"><img src="assets/prints/caju/02-calculadora-resultado.webp" width="2880" height="1800" alt="Tela de resultado da calculadora de prazos do Caju" loading="lazy" decoding="async"></figure>
+            </div>
+            <div class="feature-main">
+              <div class="feature-num">05 · Jurídico com IA</div>
+              <h3><a href="projetos/caju.html">Caju</a></h3>
+              <ul class="tags"><li class="hot">Produto próprio</li><li>Advocacia</li><li>GPT-5</li></ul>
+              <p>SaaS jurídico por assinatura que calcula prazos processuais com os feriados de cada município e lê o PDF do processo para indicar e redigir a próxima peça.</p>
+              <ul class="points">
+                <li>Feriados dos 27 estados e 5.571 municípios, atualizados todo mês</li>
+                <li>IA em três etapas com saída em JSON validada por schema</li>
+                <li>Deploy em Docker Swarm com Traefik e migrations automáticas</li>
+              </ul>
+              <a class="link-arrow" href="projetos/caju.html">Ler o estudo de caso</a>
+            </div>
+            <div class="ficha">
+              <dl>
+                <div><dt>Papel</dt><dd>Autor, do produto ao deploy</dd></div>
+                <div><dt>Período</dt><dd>Mai a set de 2026</dd></div>
+                <div><dt>Escala</dt><dd>2 módulos por assinatura, PDFs de até 50 MB, cobrança recorrente</dd></div>
+              </dl>
+              <ul class="chips"><li>Laravel 11</li><li>MySQL</li><li>OpenAI</li><li>Docker Swarm</li></ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="outros">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Outros projetos</h2>
+          <p>Produtos menores, protótipos e o trabalho de infraestrutura que sustenta os sistemas acima.</p>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <div class="kind">ERP · Laravel</div>
+            <h3>ERP Celulares</h3>
+            <p>Crediário de iPhone com estoque por IMEI, contrato digital, cobrança por 5 gateways e bloqueio remoto do aparelho via MDM Apple quando o cliente não paga. Tem assistente de IA com ferramentas.</p>
+            <ul class="chips"><li>Laravel</li><li>NanoMDM</li><li>Claude</li><li>MCP</li></ul>
+            <div class="note">Base do Wyarp MotoSYS levada a outro mercado. Autor de todo o código novo.</div>
+          </article>
+
+          <article class="card">
+            <div class="kind">Garantia locatícia · Laravel e Vue</div>
+            <h3>Virttus</h3>
+            <p>Plataforma em que imobiliárias pedem garantia locatícia, o inquilino passa por análise de crédito e o certificado sai assinado na Clicksign e cobrado por boleto.</p>
+            <ul class="chips"><li>Laravel 12</li><li>Vue 3</li><li>Inertia</li><li>Santander mTLS</li></ul>
+            <div class="note">Feito em dupla. Fui responsável pelo módulo de sinistros, pela emissão de boletos no Santander com mTLS e pela maior parte da integração com a Clicksign.</div>
+            <div class="links"><a class="link-arrow" href="https://github.com/heysolutai/virttus">Código</a></div>
+          </article>
+
+          <article class="card">
+            <div class="kind">Fintech · Node</div>
+            <h3>Financeiro IA</h3>
+            <p>Confere comprovantes enviados por foto ou áudio contra o extrato bancário do Open Finance e marca cada um como "confere", "divergência" ou "não achei no banco".</p>
+            <ul class="chips"><li>Node</li><li>PostgreSQL</li><li>pg-boss</li><li>Claude</li><li>Whisper</li></ul>
+            <div class="note">66 testes de integração, incluindo concorrência e segurança.</div>
+          </article>
+
+          <article class="card">
+            <div class="kind">Pedidos · Node</div>
+            <h3>Cardápio com Pix e WhatsApp</h3>
+            <p>Cardápio online de uma doceria com sacola, Pix pelo Asaas, painel de produção por dia e avisos automáticos ao cliente no WhatsApp a cada etapa do pedido.</p>
+            <ul class="chips"><li>Node 24</li><li>PostgreSQL</li><li>Asaas</li><li>Evolution API</li></ul>
+            <div class="note">Sem framework: servidor HTTP próprio, webhook idempotente e fila de mensagens no Postgres.</div>
+          </article>
+
+          <article class="card">
+            <div class="kind">Marketing · Next.js</div>
+            <h3>MetriGO</h3>
+            <p>Gestores de tráfego conectam as contas de anúncio da Meta, veem as métricas de cada cliente e mandam relatórios automáticos em PDF para o grupo de WhatsApp do cliente.</p>
+            <ul class="chips"><li>Next.js</li><li>BullMQ</li><li>Meta Graph API</li><li>pdfkit</li></ul>
+          </article>
+
+          <article class="card">
+            <div class="kind">Infraestrutura</div>
+            <h3>Infra self-hosted</h3>
+            <p>Docker Swarm com Traefik e HTTPS automático, n8n em modo fila com workers separados, PostgreSQL com pgvector e observabilidade com Prometheus, Loki e Grafana para várias VPS.</p>
+            <ul class="chips"><li>Docker Swarm</li><li>Traefik</li><li>n8n</li><li>Grafana</li></ul>
+          </article>
+
+          <article class="card">
+            <div class="kind">Produto</div>
+            <h3>RepasseGO</h3>
+            <p>Descoberta de produto e protótipo navegável de um marketplace de repasse de carros por assinatura, com o modelo de cobrança desenhado sobre o split do Asaas.</p>
+            <ul class="chips"><li>Descoberta</li><li>Protótipo</li><li>Asaas</li></ul>
+          </article>
+
+          <article class="card">
+            <div class="kind">Automação · n8n</div>
+            <h3>Shopee Afiliados</h3>
+            <p>Workflow que gera link de afiliado sob demanda e posta as melhores ofertas num canal do Telegram, com requisições assinadas em SHA256 na API GraphQL da Shopee.</p>
+            <ul class="chips"><li>n8n</li><li>GraphQL</li><li>Telegram</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="competencias">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Competências</h2>
+          <p>O que aparece nos projetos acima, agrupado por área.</p>
+        </div>
+        <div class="skills">
+          <div>
+            <h3>Back-end</h3>
+            <ul class="chips"><li>PHP</li><li>Laravel</li><li>Node.js</li><li>TypeScript</li><li>Express</li><li>BullMQ</li><li>Filas e jobs</li><li>REST</li><li>Webhooks</li></ul>
+          </div>
+          <div>
+            <h3>Front-end</h3>
+            <ul class="chips"><li>Next.js</li><li>React</li><li>Vue 3</li><li>Inertia</li><li>Tailwind</li><li>shadcn/ui</li><li>Alpine.js</li><li>PWA</li></ul>
+          </div>
+          <div>
+            <h3>Dados</h3>
+            <ul class="chips"><li>PostgreSQL</li><li>Row-Level Security</li><li>pgvector</li><li>MySQL</li><li>Redis</li><li>Prisma</li></ul>
+          </div>
+          <div>
+            <h3>IA</h3>
+            <ul class="chips"><li>OpenAI</li><li>Claude</li><li>Saída estruturada</li><li>Agentes com ferramentas</li><li>Servidores MCP</li><li>Whisper</li></ul>
+          </div>
+          <div>
+            <h3>Integrações</h3>
+            <ul class="chips"><li>Bradesco</li><li>Santander</li><li>Banco do Brasil</li><li>Caixa</li><li>Asaas</li><li>ZapSign</li><li>Clicksign</li><li>Omie</li><li>WhatsApp Cloud API</li><li>Meta Graph API</li></ul>
+          </div>
+          <div>
+            <h3>Infraestrutura</h3>
+            <ul class="chips"><li>Docker</li><li>Docker Swarm</li><li>Traefik</li><li>GitLab CI</li><li>Sentry</li><li>Prometheus</li><li>Grafana</li><li>Backblaze B2</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contato">
+      <div class="wrap about">
+        <div>
+          <p class="eyebrow">Sobre e contato</p>
+          <h2>Gosto de software que conversa com o mundo real.</h2>
+        </div>
+        <div class="prose">
+          <p>Trabalho de ponta a ponta, do modelo de dados ao deploy. Nos últimos meses construí um ERP que roda em lojas de motos, uma plataforma de atendimento por WhatsApp com agentes de IA e produtos próprios com cobrança recorrente.</p>
+          <p>Os problemas de que mais gosto são os que envolvem banco, nota fiscal, transportadora e WhatsApp: integrações que precisam funcionar mesmo quando o outro lado falha.</p>
+          <ul class="contact-list">
+            <li><span>E-mail</span><a href="mailto:yagocandido2@gmail.com">yagocandido2@gmail.com</a></li>
+            <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/yago-c%C3%A2ndido-machado-605782186/" rel="noopener">linkedin.com/in/yago-cândido-machado</a></li>
+            <li><span>GitHub</span><a href="https://github.com/heysolutai" rel="noopener">github.com/heysolutai</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <span>© <span data-ano>2026</span> Yago Candido Machado</span>
+      <span>Site estático, sem framework.</span>
+    </div>
+  </footer>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>

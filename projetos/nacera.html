@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NaCera · Yago Candido Machado</title>
+  <meta name="description" content="Estudo de caso: SaaS para lava-jatos com Row-Level Security no PostgreSQL, bot de WhatsApp com ferramentas e assinatura recorrente.">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script>try { var t = localStorage.getItem("tema"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {}</script>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+  <header class="nav">
+    <div class="wrap">
+      <a class="brand" href="../">Yago Machado<span>.</span></a>
+      <nav aria-label="Principal">
+        <ul>
+          <li><a href="../#projetos">Projetos</a></li>
+          <li><a href="../#contato">Contato</a></li>
+          <li>
+            <button class="theme-toggle" type="button" aria-label="Alternar tema claro ou escuro">
+              <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+              <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="case-hero">
+      <div class="wrap">
+        <a class="back" href="../#projetos">← Todos os projetos</a>
+        <p class="eyebrow">Estudo de caso 04 · SaaS próprio</p>
+        <h1>NaCera</h1>
+        <p class="lead">SaaS para lava-jatos com agenda pública, ordens de serviço, checklist com fotos, financeiro, assinatura recorrente e um bot de WhatsApp que marca horário sozinho.</p>
+        <ul class="tags"><li class="hot">Produto próprio</li><li>Lava-jatos</li><li>Salões e barbearias</li></ul>
+        <dl class="case-meta">
+          <div><dt>Papel</dt><dd>Autor de todo o código</dd></div>
+          <div><dt>Período</dt><dd>Mai a set de 2026</dd></div>
+          <div><dt>Stack</dt><dd>Next.js 15, React 19, Prisma, PostgreSQL 17</dd></div>
+          <div><dt>Escala</dt><dd>36 modelos, 31 arquivos de teste, 2 verticais</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="wrap">
+        <div class="gallery">
+          <figure class="shot with-caption wide">
+            <img src="../assets/prints/nacera/03-dashboard.webp" width="2880" height="1800" alt="Dashboard do lava-jato com faturamento do dia, mix de recebimento e operação" loading="lazy" decoding="async">
+            <figcaption>O dono vê o faturamento do dia, como o dinheiro entrou e o que está em andamento.</figcaption>
+          </figure>
+          <figure class="shot with-caption">
+            <img src="../assets/prints/nacera/05-inbox.webp" width="2880" height="1800" alt="Inbox do WhatsApp com conversa em que o bot agenda e a atendente assume" loading="lazy" decoding="async">
+            <figcaption>O bot agenda pelo WhatsApp e passa a conversa para a atendente quando precisa.</figcaption>
+          </figure>
+          <figure class="shot with-caption">
+            <img src="../assets/prints/nacera/04-checklist.webp" width="2880" height="1800" alt="Checklist de entrada com seis fotos do veículo" loading="lazy" decoding="async">
+            <figcaption>Checklist de entrada com fotos obrigatórias, para não haver discussão sobre avarias.</figcaption>
+          </figure>
+          <figure class="shot with-caption">
+            <img src="../assets/prints/nacera/02-agendamento-publico.webp" width="2880" height="2246" alt="Página pública de agendamento com grade de horários" loading="lazy" decoding="async">
+            <figcaption>Agendamento público com a marca do lava-jato e só os horários livres.</figcaption>
+          </figure>
+          <figure class="shot phone with-caption">
+            <img src="../assets/prints/nacera/07-agendamento-mobile.webp" width="780" height="1688" alt="Escolha de porte e serviço no celular, com preço por porte" loading="lazy" decoding="async">
+            <figcaption>No celular, o preço muda conforme o porte do carro.</figcaption>
+          </figure>
+          <figure class="shot with-caption">
+            <img src="../assets/prints/nacera/06-financeiro.webp" width="2880" height="1800" alt="Financeiro com entradas, saídas, saldo e extrato" loading="lazy" decoding="async">
+            <figcaption>Financeiro que junta lançamentos manuais e receitas das ordens de serviço.</figcaption>
+          </figure>
+          <figure class="shot with-caption">
+            <img src="../assets/prints/nacera/01-landing-planos.webp" width="2880" height="1800" alt="Planos do NaCera com teste grátis de 7 dias" loading="lazy" decoding="async">
+            <figcaption>Planos com teste grátis e cobrança recorrente pelo Asaas.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="wrap case-grid">
+        <h2>O problema</h2>
+        <div class="prose">
+          <p>Lava-jatos controlam agenda, serviços e caixa no papel ou no WhatsApp pessoal do dono. Perdem horários, discutem avarias sem prova e não sabem quanto faturaram no mês.</p>
+          <p>O NaCera digitaliza o fluxo do agendamento ao pagamento, registra o estado do carro com fotos na entrada e deixa um bot atender no WhatsApp a qualquer hora.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="wrap case-grid">
+        <h2>O que construí</h2>
+        <div class="prose">
+          <ul class="checklist">
+            <li>Cadastro self-service do lava-jato com catálogo de serviços e preço por porte do veículo.</li>
+            <li>Link público de agendamento com a marca do lava-jato, serviços adicionais e só os horários livres.</li>
+            <li>Ordens de serviço com equipe, clientes, veículos e pagamentos, com alerta quando o valor pago diverge do cobrado.</li>
+            <li>Checklist de entrada com fotos obrigatórias e assinatura do cliente, guardado em storage com URL pré-assinada.</li>
+            <li>Bot de WhatsApp com 4 ferramentas (listar serviços, ver disponibilidade, criar agendamento e chamar um humano) e uma caixa de entrada para o atendente assumir.</li>
+            <li>Assinatura pelo Asaas com 3 planos, desconto no anual e teste grátis de 7 dias, mais um painel da plataforma com autenticação em dois fatores.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="wrap case-grid">
+        <h2>Decisões técnicas</h2>
+        <div class="decisions">
+          <div class="decision">
+            <h3>Isolamento no próprio banco</h3>
+            <p>Row-Level Security no PostgreSQL com três papéis de acesso. Cada transação define a empresa com <code>SET LOCAL</code>, e há testes que tentam ler dados de outra empresa para garantir que a leitura falha.</p>
+          </div>
+          <div class="decision">
+            <h3>Spec antes do código</h3>
+            <p>Cada funcionalidade nasceu de uma spec com plano, modelo de dados e contratos. Uma "constituição" do projeto define princípios inegociáveis de isolamento, LGPD, dinheiro e segurança.</p>
+          </div>
+          <div class="decision">
+            <h3>IA com orçamento por empresa</h3>
+            <p>O provedor de WhatsApp é plugável (UazAPI ou Meta Cloud API), as credenciais ficam criptografadas com AES-256-GCM e cada empresa tem um limite de gasto com o modelo de linguagem. Tudo com testes.</p>
+          </div>
+          <div class="decision">
+            <h3>Dinheiro e LGPD testados</h3>
+            <p>Biblioteca própria para valores monetários, registro de consentimento, trilha de auditoria e testes que verificam a remoção de dados pessoais.</p>
+          </div>
+          <div class="decision">
+            <h3>Segunda vertical em 5 dias</h3>
+            <p>O AgendBeauty reaproveitou a base para salões e barbearias. A mudança principal foi trocar "veículo" por um "recurso" genérico com capacidade própria, como uma cadeira ou um profissional.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="wrap case-grid">
+        <h2>Em números</h2>
+        <div class="stats">
+          <div class="stat"><b>36</b><span>modelos de dados</span></div>
+          <div class="stat"><b>31</b><span>arquivos de teste</span></div>
+          <div class="stat"><b>4</b><span>ferramentas no bot de WhatsApp</span></div>
+          <div class="stat"><b>5 dias</b><span>para a segunda vertical</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="wrap case-grid">
+        <h2>Stack</h2>
+        <div>
+          <ul class="chips"><li>Next.js 15</li><li>React 19</li><li>TypeScript</li><li>Prisma</li><li>PostgreSQL 17</li><li>Better Auth</li><li>Tailwind 4</li><li>Zod</li><li>Vitest</li><li>OpenAI</li><li>S3 / R2</li><li>Resend</li><li>Upstash Redis</li><li>PWA</li><li>Docker Swarm</li><li>Traefik</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="wrap next-project">
+        <a href="welog.html"><small>Anterior</small><b>← WeLog</b></a>
+        <a class="right" href="caju.html"><small>Próximo</small><b>Caju →</b></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <span>© <span data-ano>2026</span> Yago Candido Machado</span>
+      <span>Código privado.</span>
+    </div>
+  </footer>
+  <script src="../assets/site.js"></script>
+</body>
+</html>

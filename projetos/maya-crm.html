@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maya CRM · Yago Candido Machado</title>
+  <meta name="description" content="Estudo de caso: plataforma multi-empresa de atendimento por WhatsApp com agentes de IA, filas e servidor MCP com OAuth 2.1.">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script>try { var t = localStorage.getItem("tema"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {}</script>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+  <header class="nav">
+    <div class="wrap">
+      <a class="brand" href="../">Yago Machado<span>.</span></a>
+      <nav aria-label="Principal">
+        <ul>
+          <li><a href="../#projetos">Projetos</a></li>
+          <li><a href="../#contato">Contato</a></li>
+          <li>
+            <button class="theme-toggle" type="button" aria-label="Alternar tema claro ou escuro">
+              <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+              <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="case-hero">
+      <div class="wrap">
+        <a class="back" href="../#projetos">← Todos os projetos</a>
+        <p class="eyebrow">Estudo de caso 01 · SaaS próprio</p>
+        <h1>Maya CRM</h1>
+        <p class="lead">Plataforma multi-empresa que centraliza o atendimento por WhatsApp, com caixa de entrada da equipe, funil de vendas e agentes de IA que respondem, agendam e consultam o CRM sozinhos.</p>
+        <ul class="tags"><li class="hot">Em produção na Wyarp</li><li>Vertical para restaurantes</li><li>Multi-empresa</li></ul>
+        <dl class="case-meta">
+          <div><dt>Papel</dt><dd>Autor principal, com cerca de 98% dos commits</dd></div>
+          <div><dt>Período</dt><dd>Mar a out de 2026, a partir de um protótipo de out de 2025</dd></div>
+          <div><dt>Stack</dt><dd>Next.js 15, Prisma, PostgreSQL 16, BullMQ, Redis</dd></div>
+          <div><dt>Escala</dt><dd>175 rotas de API, 55 modelos, 53 arquivos de teste</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="wrap">
+        <div class="gallery">
+          <figure class="shot with-caption wide">
+            <img src="../assets/prints/maya-crm/01-conversas.webp" width="2880" height="1800" alt="Caixa de entrada com conversa em que a IA atende e passa para um vendedor" loading="lazy" decoding="async">
+            <figcaption>A IA faz o primeiro atendimento, deixa uma nota interna e passa a conversa para o vendedor, com o lead já no funil.</figcaption>
+          </figure>
+          <figure class="shot with-caption ">
+            <img src="../assets/prints/maya-crm/03-dashboard.webp" width="2880" height="1800" alt="Dashboard em tempo real com atendimentos por status e tempo de resposta" loading="lazy" decoding="async">
+            <figcaption>Indicadores em tempo real: fila, atendimentos abertos e tempo de resposta da IA contra o humano.</figcaption>
+          </figure>
+          <figure class="shot with-caption ">
+            <img src="../assets/prints/maya-crm/02-crm-kanban.webp" width="2880" height="1800" alt="Funil kanban de oportunidades de venda" loading="lazy" decoding="async">
+            <figcaption>Funil de oportunidades com valor por etapa.</figcaption>
+          </figure>
+          <figure class="shot with-caption ">
+            <img src="../assets/prints/maya-crm/04-agente.webp" width="2880" height="1800" alt="Configuração de um agente de IA por etapas" loading="lazy" decoding="async">
+            <figcaption>Cada número de WhatsApp tem seu agente, configurado por etapas.</figcaption>
+          </figure>
+          <figure class="shot with-caption ">
+            <img src="../assets/prints/maya-crm/04b-agente-etapas.webp" width="2880" height="1800" alt="Roteiro do agente com cinco etapas" loading="lazy" decoding="async">
+            <figcaption>O roteiro do agente: ele só avança quando o critério da etapa é atendido.</figcaption>
+          </figure>
+          <figure class="shot with-caption ">
+            <img src="../assets/prints/maya-crm/05-campanha.webp" width="2880" height="1800" alt="Campanha de disparo em andamento com progresso e destinatários" loading="lazy" decoding="async">
+            <figcaption>Campanha com limite de envio, janela de horário e acompanhamento por destinatário.</figcaption>
+          </figure>
+          <figure class="shot with-caption phone">
+            <img src="../assets/prints/maya-crm/06-conversa-mobile.webp" width="780" height="1688" alt="Conversa no celular" loading="lazy" decoding="async">
+            <figcaption>A caixa de entrada no celular, como PWA.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section class="case-section">
+      <div class="wrap case-grid">
+        <h2>O problema</h2>
+        <div class="prose">
+          <p>Pequenas e médias empresas atendem clientes por vários números de WhatsApp, sem histórico compartilhado, sem distribuição entre atendentes e sem métricas. Quando alguém sai de férias, as conversas somem junto.</p>
+          <p>O Maya junta tudo numa caixa de entrada por empresa, coloca um agente de IA no primeiro atendimento e deixa a equipe assumir quando precisa. O gestor acompanha o funil e os indicadores no mesmo lugar.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="wrap case-grid">
+        <h2>O que construí</h2>
+        <div class="prose">
+          <ul class="checklist">
+            <li>Caixa de entrada em tempo real com transferência entre atendentes, notas internas, reações e lista virtualizada.</li>
+            <li>Funil kanban com pipelines e etapas, mais um funil de oportunidades com conversão de leads.</li>
+            <li>Agentes de IA por canal, com biblioteca de prompts, base de conhecimento e um playground para testar antes de publicar.</li>
+            <li>Campanhas de disparo em massa com limite de envio, janela de horário por fuso e opt-out automático quando o cliente responde "SAIR" ou "PARAR".</li>
+            <li>Agendamentos integrados ao Google Calendar, com lembretes e follow-ups automáticos.</li>
+            <li>Painel da plataforma com empresas, usuários, personificação para suporte e consumo de tokens de IA por empresa.</li>
+            <li>Uma vertical para restaurantes com reservas, eventos com inscrição e pesquisa pós-visita classificada automaticamente.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="wrap case-grid">
+        <h2>Decisões técnicas</h2>
+        <div class="decisions">
+          <div class="decision">
+            <h3>Um adaptador por provedor de WhatsApp</h3>
+            <p>UazAPI, Evolution (Baileys), Meta Cloud API e Covercut ficam atrás da mesma interface. Um único webhook identifica de qual provedor veio a mensagem, então trocar de provedor não mexe no resto do sistema.</p>
+          </div>
+          <div class="decision">
+            <h3>Filas para tudo que pode falhar</h3>
+            <p>12 workers BullMQ cuidam de mensagens de entrada e saída, mídia, transcrição, campanhas e turnos do agente. Um lock distribuído no Redis impede que dois workers respondam à mesma conversa, e os workers podem rodar num serviço separado do app.</p>
+          </div>
+          <div class="decision">
+            <h3>Agente com ferramentas, não só chat</h3>
+            <p>O motor de agentes monta o prompt da etapa em que a conversa está e roda um laço entre o modelo e as ferramentas: agenda, CRM, produtos, base de conhecimento e chamadas HTTP. Aceita modelos da OpenAI, do Google e da Anthropic, transcreve áudio com Whisper e pode responder por voz.</p>
+          </div>
+          <div class="decision">
+            <h3>MCP com OAuth 2.1</h3>
+            <p>Um servidor MCP somente leitura deixa o gestor consultar o CRM direto pelo Claude. Tem registro dinâmico de cliente, refresh token rotativo e escopo isolado por empresa.</p>
+          </div>
+          <div class="decision">
+            <h3>Isolamento entre empresas com teste</h3>
+            <p>Toda consulta é filtrada pela empresa do usuário, com testes específicos contra acesso a recurso de outra empresa (IDOR). Chaves de API são guardadas com hash, credenciais com criptografia AES e webhooks validados por HMAC.</p>
+          </div>
+          <div class="decision">
+            <h3>Tempo real sem polling</h3>
+            <p>Server-Sent Events com fan-out por Redis pub/sub, para que várias instâncias do app entreguem o mesmo evento à tela certa.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="wrap case-grid">
+        <h2>Da ideia ao produto</h2>
+        <div class="prose">
+          <div class="callout">
+            <p>A primeira versão foi um protótipo no Lovable com Supabase, bom para validar telas com clientes. Quando o produto precisou de filas, vários provedores de WhatsApp e banco próprio, reescrevi tudo em Next.js 15 com Prisma e PostgreSQL.</p>
+            <p>A mesma base hoje roda com variações por cliente, como a da Wyarp, com campanhas e motor de agentes, e a vertical para restaurantes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="wrap case-grid">
+        <h2>Em números</h2>
+        <div class="stats">
+          <div class="stat"><b>113 mil</b><span>linhas de TypeScript na variante principal</span></div>
+          <div class="stat"><b>175</b><span>rotas de API</span></div>
+          <div class="stat"><b>12</b><span>workers em fila</span></div>
+          <div class="stat"><b>53</b><span>arquivos de teste</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="wrap case-grid">
+        <h2>Stack</h2>
+        <div>
+          <ul class="chips"><li>Next.js 15</li><li>React</li><li>TypeScript</li><li>Prisma 7</li><li>PostgreSQL 16</li><li>pgvector</li><li>NextAuth 5</li><li>BullMQ</li><li>Redis</li><li>Tailwind</li><li>shadcn/ui</li><li>Zod</li><li>PWA</li><li>Jest</li><li>Docker Swarm</li><li>Traefik</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="wrap next-project">
+        <a href="../#projetos"><small>Voltar</small><b>Todos os projetos</b></a>
+        <a class="right" href="wyarp-motosys.html"><small>Próximo</small><b>Wyarp MotoSYS →</b></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <span>© <span data-ano>2026</span> Yago Candido Machado</span>
+      <span>Código privado.</span>
+    </div>
+  </footer>
+  <script src="../assets/site.js"></script>
+</body>
+</html>
